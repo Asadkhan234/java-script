@@ -177,39 +177,110 @@ let  number3=new Number(400000000);
 // ==========================DISCUS AOUT MATH================================
 
 // math.abs(absolute) it is used to  converty negative vlue to possitive 
-console.log(Math.abs(-10));
+// console.log(Math.abs(-10));
 // math.round it round of the actual value
-console.log(Math.round(5.5));
+// console.log(Math.round(5.5));
 // math.min to find minimum value
-console.log (Math.min(22,33,444,5,55,));
+// console.log (Math.min(22,33,444,5,55,));
 // math.max for biger number
-console.log(Math.max(2333,44444,55555,66666));
+// console.log(Math.max(2333,44444,55555,66666));
 // math.random range 0 to 1 in between
-console.log(Math.random())
+// console.log(Math.random())
 
 // =============================DISCUS ABOUT DATE===============================
 
 let myDate=new Date()
-console.log(myDate);
+// console.log(myDate);
 // conversion to string
-console.log(myDate.toDateString());
-console.log(myDate.toISOString());
-console.log(myDate.toJSON());
-console.log(myDate.toISOString());
-console.log(myDate.toISOString());
-console.log(myDate.toLocaleDateString());
-console.log(myDate.toLocaleString());
-console.log(myDate.toString());
-console.log(myDate.toLocaleString(30-9-2023));
+// console.log(myDate.toDateString());
+// console.log(myDate.toISOString());
+// console.log(myDate.toJSON());
+// console.log(myDate.toISOString());
+// console.log(myDate.toISOString());
+// console.log(myDate.toLocaleDateString());
+// console.log(myDate.toLocaleString());
+// console.log(myDate.toString());
+// console.log(myDate.toLocaleString(30-9-2023));
 
 
 let yesterdaydate= new Date()
-console.log("yes"+yesterdaydate);
+// console.log("yes"+yesterdaydate);
 // for current or now date we use
 
 let myTimeStamp= Date.now()
-console.log(myTimeStamp);
-console.log(myDate.getTime())
+// console.log(myTimeStamp);
+// console.log(myDate.getTime())
+
+// ******************************* ARRAYS ********************************************
+
+// () => paranthesis  , [] => brackets ,  {} => curly brases
+
+// simple arrays
+const array=[1,2,3,4,5,6]
+const collageNames=["Nabi bagh","Dj science","Sm science","Islamia"]
+const bool=[true,false]
+const pakTeam=[{
+ captian:"Baber",vc:"shadab",opner1:"Fhakhar",opner2:"Imam",midel_order1:"Iftikhar",midel_order2:"Saud shakeel",
+ spiner1:"Nawaz",spiner2:"Usama",bowler1:"Shaheen",bowler2:"Naseem",bowler3:"Haris"
+}]
+
+// ========================================================
+// METHODS OF ARRAYS
+// push : to add something at the end of the array;
+// array.push("addition" +":"+ 88,99)
+// pop : to delete the last array automatically
+// array.pop()
+// console.log(array);
+
+// unshift : to add something in the first of the array it also change the array index numbers
+// collageNames.unshift("Sm arts collage","jinah  collage")
+// shift : to remove the first element of the array;
+// collageNames.shift()
+// console.log(collageNames);
+
+
+// pakTeam.push({name:"asad",age:20})
+// pakTeam.pop({})
+// console.log(pakTeam);
+// pakTeam.unshift({name:"asad",age:20})
+// console.log(pakTeam);
+
+// =========================================================
+// use of splice ;
+let count=[1,2,3,4,5,6,7,8,9]
+// the first number shows you can start from this index 
+// And the number shows you can end on this index
+// 0 to 3 shows Range
+count.splice(0,3,"khan")
+// console.log(count);
+
+// we  ues slice 
+// the first number shows you can start from this index 
+// And the number shows you can end on this index
+
+const copycount=count.slice(0,7)
+// console.log(copycount);
+
+// =========================HOW TO ADD 2 OR MORE ARRAYS IN ONE ARRAY===================================
+let glas_sset=["plastic glass","fiber glass","normal glass"]
+let mobiles=["samsung","iphone","nokia","infinix","oppo"]
+
+
+// mobiles.push(glas_sset);
+// console.log(mobiles);
+// we use concat to mixed two arrays
+let mixed= mobiles.concat(glas_sset)
+console.log(mixed);
+console.log(mixed[4]);
+
+// flat is also used to add two arrays
+
+let speed=[1,2,[3,4,5],6,[7,8,9]]
+
+let speed2=speed.flat(Infinity)
+console.log(speed2);
+
+
 
 
 
