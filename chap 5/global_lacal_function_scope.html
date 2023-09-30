@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+</head>
+<body>
+
+
+<script>
+    // local scope ma :function or block dono a gati hi
+    // block scope ma function ma (let or const ) block se bahir kam nhi kare ga
+    // global scope function ma bhi kam kare ga or bhir bhi;
+
+
+    // global scope
+//     var num=20;
+//     console.log(num)
+//     function asad(){
+//         console.log(num)
+//         console.log(num)
+//     }
+//     asad()
+//     console.log(num)
+
+
+//     // global scope
+//     var name="asad"
+//     {
+//         console.log(name)
+//     }
+
+//     console.log(name)
+
+
+// // local scope
+
+// {
+// let a=30;
+//     console.log(a+"=========>local")
+// }
+
+// // console.log(a+"===========>not shown out side from block")
+
+
+// // local scope
+// function shope(){
+//     const mobile="samsung";
+//     console.log(mobile)
+// }
+
+// shope()
+// console.log(mobile+"===================>not shown out side from block")
+
+
+// let name2="talha"
+// console.log(name2)
+// {
+//     let name3="ali"
+//     console.log(name3)
+//     console.log(name2)
+// }
+
+// console.log(name2)
+// console.log(name3)
+
+
+
+
+let name4="bobo"
+function calculate(){
+    const name5="jhone"
+}
+
+calculate()
+if(true){
+    const name5="jhone"
+    let name4="bobo"
+}
+
+console.log(`my name is ${name4} and i am awsome`)
+
+</script>    
+</body>
+</html>

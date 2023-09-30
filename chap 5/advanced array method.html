@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach and map</title>
+</head>
+<body>
+    
+    <script>
+        // special cases in array
+        // forEach is a type of loop we can use it in place of loops and it cant return somethig
+    //    let array=[
+    //       {name:"asad",age:"20",qualifiqation:"14"},
+    //       {name:"saad",age:"22",qualifiqation:"14"},
+    //       {name:"saquib",age:"23",qualifiqation:"14"},
+
+    //    ]
+
+       
+
+    //      array.forEach(function(val){
+    //     alert("my name is  "  +   val.name+ " my age is: " +val.age)
+    //     alert("i studed in:" +  val.qualifiqation)
+        
+    //    })
+       
+    //    let name=["asad","saad","khan","saquib"]
+    //    name.forEach(function(val){
+    //     console.log(val)
+    //    })
+
+
+
+// var sad=[{
+//   name:"asad",age:20,height:6.0,
+//   name:"saad",age:21,height:5.6
+// }]
+
+// sad.forEach(function( val,index){
+
+//   console.log(val)
+// })
+
+
+// let name=["asad","khan","saad","amir"]
+// name.forEach(function(as , index){
+
+//     document.write(index+":"+as)
+// })
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // use of map
+    // the word map is used  to ,modify  the arrays it cant the change the privious array but can chage the new one
+
+    let set=[
+      {name:"adil",age:"20",town:"sawat"},
+      {name:"malik",age:"23",town:"sawat"},
+      {name:"sayed",age:"25",town:"sawat"},
+
+    ]
+
+
+  let upset=set.map(function(std){
+         
+        
+         Object:{name:set.name,id="12"}
+        console.log(std)
+        return +2
+  })
+
+ console.log(upset)
+ console.log(set)
+
+
+// filter the function fillter is used for return some thing and as well we can use logical operation s with filter;
+// It is used to find or search something from array
+// var info=[{name:"asad",age:20,class:"14"},
+// {name:"saad",age:22,class:14},
+// {name:"saquib",age:22,class:12}];
+
+
+// var khan=info.filter((bk) => bk.name==="asad" || bk.age===22)
+// var khan1=info.filter((bk)=>{ return bk.age===20})
+// console.log(khan1)
+// console.log(khan)
+
+
+
+
+
+
+
+
+
+
+
+
+// the word find is used in array  to cheak the  condition;
+// It is used to find or search something from array
+// var host=["india","pakistan","australia","england","sirlanka"]
+// var s=host.find((val)=>val=="india")
+// var k=host.find((sel)=>sel==="australia")
+// console.log(k)
+// console.log(s)
+
+
+
+
+
+// var number=[1,2,3,4,5,6,7,8,9]
+// var fnum=number.find((set)=>set>8)
+// var hit=number.find((as)=>as>4)
+// console.log(hit)
+// console.log(fnum)
+    </script>
+</body>
+</html>

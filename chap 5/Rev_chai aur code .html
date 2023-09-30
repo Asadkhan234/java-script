@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai our code </title>
+</head>
+<body>
+    
+    <h1>REVISION OF JS FROM CHAI OUR CODE</h1>
+    <script>
+
+        // how  to make a variables in js
+        // const it cant be change when you declear at once;
+        const facebookId="03132478703khan"
+        // let it can be change when you decleare it;
+        let name="Asadkhan"
+        // var it can be chage able aur also you again declareable;
+        var city="karachi"
+
+        // changing the variables
+        // its mean it is not allowed
+        // facebookId="khan123"
+        name="saad khan"
+        city="peshawer"
+        // console.table(facebookId,name,city)
+
+    // HOW MANY DATA TYPES IN JAVA SCRIPT;
+    // THSI ALL ARE NON-PRIMITIVE DATA TYPES
+    // STRING => ""
+    var name1="ASAD KHAN";
+    // NUMBER => 29
+    var number=100;
+    // BOOLEAN => true/false
+    let value=true;
+    // UNDEFINED 
+     let team;
+    // NULL stand alone value
+      var bit=null;
+
+
+      // console.table(typeof name1 +": This is the data type of : "+  name1)
+      // console.log(typeof team +":  This is the data type of :"+ team);
+      // console.log(typeof bit +":  This is the data type of :" + bit);
+      // console.log(typeof number +":  This is the data type of :"+ number)
+      // console.log(typeof value +":  This is the data type of :"+ value)
+
+      var as=["asad",20,true,null,undefined]
+
+      // for(i=0;i<as.length;i++){
+      //   console.log(typeof as[i])
+      // }
+
+    //  DATA TYPE CONVERSION AND CONFUSION
+    
+    var num=50;
+    // console.log(typeof num);
+    let secnum = String(num)
+    // console.log(typeof secnum+":"+secnum);
+
+    let set="khan";
+    // console.log(typeof set)
+    let numberset=Boolean(set)
+//    console.log(typeof numberset+":"+numberset);
+
+
+   let w=null;
+//    console.log(typeof w);
+   let con_w=Boolean(w)
+//    console.log(typeof con_w+":"+con_w);
+
+//    ************ OPERATIONS ***********************
+let val=10;
+let negval=-val;
+// console.log(negval);
+
+
+// basic operations
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**2);
+// console.log(2/4);
+// console.log(2%10);
+
+// to add two sting;
+let great="hellow"
+let country="pakistan"
+// console.log(great + country);
+
+let counting=1;
+counting++
+++counting;
+counting--;
+counting++;
+// console.log(counting)
+
+// *******************comparision operater************************
+
+// console.log("20"===20);
+// console.log("asad"==="asad");
+// console.log(null>0)
+// console.log(null==0)
+// console.log(null==true);
+// console.log(null<=0);
+
+// console.log(undefined>0)
+// console.log(undefined==0)
+// console.log(undefined==true);
+// console.log(undefined<=0);
+
+// console.log(40>30)
+// console.log(40===20)
+// console.log(10>=10)
+// console.log("20"!==20)
+
+// =================== PRIMITIVE DATA TYPE AND MEMORY ALLOCATION = STACK    =========================
+// STACK: mean that the value of first varable that you assign and you give that variable to
+// another variable and then you change the first  variable vlue so the value  of first couldnt 
+// change it is called (stack memory allocatin)
+// NUMBER,STRING,BOOLEAN,NULL,UNDEFINED,
+let hit=20;
+hit2=hit;
+// console.log(hit);
+hit2="asad"
+// console.log(hit);
+// console.log(hit2);
+
+
+// =================================  NON PRIMITIVE AND MEMORY ALLOCATION= HEAP ===================================
+// heap is a by refrence vale if you change one variable value so the other variable value 
+// change automatically;
+// ARRAY,FUNCTIN,OBJECT
+// let fun=[{
+//     name:"asad",age:20,class:14,
+// }]
+
+// let net=fun\\
+// console.log(fun)
+// console.log(net);
+
+// let wet=net.slice()
+// console.log(wet)
+// net.name="khan"
+
+
+
+
+// =================================INDEPTH IN NUMBERS=======================================
+
+var number1=100;
+// console.log(number1);
+
+// num with data type
+
+let number2=new Number(300)
+// console.log(number2);
+
+
+// toFixed: function toFixed()
+// it is used for point in numbers
+// toLocaleString: function toLocaleString()
+// it is used to gives comas and gives order to numbers
+// toPrecision: function toPrecision()
+// it is used to presies or roundof the number
+// toString: function toString()
+// it convert the number into string
+
+// use of these values
+let  number3=new Number(400000000);
+// console.log(number3.toFixed(2));
+// console.log(number3.toLocaleString(3));
+// console.log(number3.toPrecision(4))
+// console.log(number3.toString());
+// console.log(typeof number3);
+
+// ==========================DISCUS AOUT MATH================================
+
+// math.abs(absolute) it is used to  converty negative vlue to possitive 
+console.log(Math.abs(-10));
+// math.round it round of the actual value
+console.log(Math.round(5.5));
+// math.min to find minimum value
+console.log (Math.min(22,33,444,5,55,));
+// math.max for biger number
+console.log(Math.max(2333,44444,55555,66666));
+// math.random range 0 to 1 in between
+console.log(Math.random())
+
+// =============================DISCUS ABOUT DATE===============================
+
+let myDate=new Date()
+console.log(myDate);
+// conversion to string
+console.log(myDate.toDateString());
+console.log(myDate.toISOString());
+console.log(myDate.toJSON());
+console.log(myDate.toISOString());
+console.log(myDate.toISOString());
+console.log(myDate.toLocaleDateString());
+console.log(myDate.toLocaleString());
+console.log(myDate.toString());
+console.log(myDate.toLocaleString(30-9-2023));
+
+
+let yesterdaydate= new Date()
+console.log("yes"+yesterdaydate);
+// for current or now date we use
+
+let myTimeStamp= Date.now()
+console.log(myTimeStamp);
+console.log(myDate.getTime())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
