@@ -9,7 +9,7 @@
     
     <script>
         // special cases in array
-        // forEach is a type of loop we can use it in place of loops and it cant return somethig
+        // forEach is a type of loop we can use it in place of loops and it can't return somethig
     //    let array=[
     //       {name:"asad",age:"20",qualifiqation:"14"},
     //       {name:"saad",age:"22",qualifiqation:"14"},
@@ -20,26 +20,29 @@
        
 
     //      array.forEach(function(val){
-    //     alert("my name is  "  +   val.name+ " my age is: " +val.age)
-    //     alert("i studed in:" +  val.qualifiqation)
+    //     console.log("my name is  "  +   val["name"]+ " my age is: " +val.age);
+    //     console.log("i studed in:" +  val.qualifiqation);
+    //     console.log(val["age"]+val["name"]);
+    //     console.log(...array);
         
     //    })
        
     //    let name=["asad","saad","khan","saquib"]
-    //    name.forEach(function(val){
-    //     console.log(val)
+    //    name.forEach(function(val,index){
+    //     console.log(index+":"+val)
     //    })
 
 
 
 // var sad=[{
 //   name:"asad",age:20,height:6.0,
-//   name:"saad",age:21,height:5.6
+//   name:"saad",age:21,height:5.6,
 // }]
 
-// sad.forEach(function( val,index){
+// sad.forEach(function(val){
 
 //   console.log(val)
+//   console.log(sad1);
 // })
 
 
@@ -47,8 +50,29 @@
 // name.forEach(function(as , index){
 
 //     document.write(index+":"+as)
+//     document.write("<br>"+as+"<br>")
 // })
     
+// const ages = [25, 30, 18, 42, 15];
+
+
+// ages.forEach(function(val){
+//     if(ages){
+// console.log("all are adult");
+//     }else{
+//         console.log("all are not adults");
+//     }
+// })
+
+
+// const numbers = [1, 2, 3, 4, 5,4];
+// let sum = 0;
+
+// numbers.forEach(number => {
+//   sum=sum += number;
+// });
+
+// console.log('Sum of numbers:', sum);
 
 
 
@@ -65,24 +89,24 @@
     // use of map
     // the word map is used  to ,modify  the arrays it cant the change the privious array but can chage the new one
 
-    let set=[
-      {name:"adil",age:"20",town:"sawat"},
-      {name:"malik",age:"23",town:"sawat"},
-      {name:"sayed",age:"25",town:"sawat"},
+    // let set=[
+    //   {name:"adil",age:"20",town:"sawat"},
+    //   {name:"malik",age:"23",town:"sawat"},
+    //   {name:"sayed",age:"25",town:"sawat"},
 
-    ]
+    // ]
 
 
-  let upset=set.map(function(std){
+//   let upset=set.map(function(std){
          
         
-         Object:{name:set.name,id="12"}
-        console.log(std)
-        return +2
-  })
+//          Object:{name:"khan",id="12"}
+//         console.log(std)
+//         return +2
+//   })
 
- console.log(upset)
- console.log(set)
+//  console.log(upset)
+// //  console.log(set)
 
 
 // filter the function fillter is used for return some thing and as well we can use logical operation s with filter;
@@ -94,6 +118,8 @@
 
 // var khan=info.filter((bk) => bk.name==="asad" || bk.age===22)
 // var khan1=info.filter((bk)=>{ return bk.age===20})
+// var khan2=info.filter((ck)=>ck.age===20 || ck.class===14)
+// console.log(khan2);
 // console.log(khan1)
 // console.log(khan)
 
@@ -115,16 +141,133 @@
 // var k=host.find((sel)=>sel==="australia")
 // console.log(k)
 // console.log(s)
+// console.log(val);
+// console.log(sel);
 
 
 
-
-
-// var number=[1,2,3,4,5,6,7,8,9]
-// var fnum=number.find((set)=>set>8)
-// var hit=number.find((as)=>as>4)
+var number=[1,2,3,4,5,6,7,8,9]
+var fnum=number.find((set)=>set>8)
+var hit=number.find((as)=>as>4)
 // console.log(hit)
 // console.log(fnum)
+
+
+
+
+
+// =======================use of reduce ===============================
+// it is use to return something and for finding and there are two elements in the parameter
+// one is accumulate and the second is cureent
+
+// let team=[
+//     { pakTeam:{
+//         captian:"Baber",
+//         vc:"Rizwan",
+//         midel:"Iftikhar",
+//         bowler:"Shaheen"
+//     }},
+//     {indTeam:{
+//         captian:"Rohit",
+//         vc:"Virat",
+//         midel:"Shubman",
+//         bowler:"Bhumra"
+
+//     }},
+//     {newTeam:{
+//         captian:"Willimson",
+//         vc:"Mitchel",
+//         midel:"Chapman",
+//         bowler:"Boult"
+//     }},
+//     {ausTeam:{
+//         captian:"Smith",
+//         vc:"warner",
+//         midel:"Marsh",
+//         bowler:"Starc"
+//     }},
+
+
+// ]
+
+// let fav=team.reduce(function(pre,curr){
+    // console.log(pre);
+    // console.log(curr);
+   
+// },0)
+
+// console.log(fav);
+
+
+let group=[{
+    name:"asad",marks:290
+} ,
+{nmae:"saad",
+marks:280,
+
+},
+
+{
+    name:"khan",
+    marks:400
+}
+]
+
+let pay=group.reduce(function(pre,curr){
+    let set= pre + curr.marks
+    return set +4
+},0)
+// console.log(pay);
+
+
+let company=[{
+start:1981,
+end:2004
+},
+
+{start:1971,
+end:2007},
+
+{start:1881,
+end:2005},
+
+{start:1881,
+end:2005}
+]
+const cal=company.reduce(function(a,b){
+
+    return a+=b.end;
+},0)
+// console.log(cal);
+
+
+// let math=[1,2,3,4,5,66,7,8]
+
+// // let add=math.reduce((p,c)=>c,0)
+// let add=math.reduce(function(a,s){
+// //     console.log(a);
+// //     console.log(s.marks);
+// },0)
+// console.log(add);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 </html>

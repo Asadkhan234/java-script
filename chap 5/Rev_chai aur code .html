@@ -15,7 +15,7 @@
         const facebookId="03132478703khan"
         // let it can be change when you decleare it;
         let name="Asadkhan"
-        // var it can be chage able aur also you again declareable;
+        // var it can be chage able and also again declareable;
         var city="karachi"
 
         // changing the variables
@@ -122,7 +122,7 @@ counting++;
 let hit=20;
 hit2=hit;
 // console.log(hit);
-hit2="asad"
+hit="asad"
 // console.log(hit);
 // console.log(hit2);
 
@@ -131,11 +131,11 @@ hit2="asad"
 // heap is a by refrence vale if you change one variable value so the other variable value 
 // change automatically;
 // ARRAY,FUNCTIN,OBJECT
-// let fun=[{
-//     name:"asad",age:20,class:14,
-// }]
+let fun=[{
+    name:"asad",age:20,class:14,
+}]
 
-// let net=fun\\
+// let net=fun
 // console.log(fun)
 // console.log(net);
 
@@ -270,23 +270,126 @@ let mobiles=["samsung","iphone","nokia","infinix","oppo"]
 // console.log(mobiles);
 // we use concat to mixed two arrays
 let mixed= mobiles.concat(glas_sset)
-console.log(mixed);
-console.log(mixed[4]);
+// console.log(mixed);
+// console.log(mixed[4]);
 
 // flat is also used to add two arrays
 
 let speed=[1,2,[3,4,5],6,[7,8,9]]
 
 let speed2=speed.flat(Infinity)
-console.log(speed2);
+// console.log(speed2);
+// is ,of ,form is also part of array
+
+
+// =======================================OBJECTS===================================================
+
+
+
+// There are three types to make objects
+// singleton
+// object.create
+// object.literal (simple )
 
 
 
 
+// how to decleare a symbol;
+const met=Symbol("key1")
+let intro={
+    name:"Asad",age:20,height:6.0,
+    language:"pushto","hoby":"cricket",[met]:"saad"
+}
+
+// we call objects with two methods
+
+// console.log(intro.name);
+// console.log(intro["name"]);
+// console.log(   intro[met]);
+
+// Object.freeze(intro)
+
+intro.name="khan"
+// console.log(intro);
+
+intro.greet=function(){
+    // console.log("Hello js user")
+}
+
+intro.greet2=function(){
+    // console.log(`Hello js user,${this.name}`)
+}
 
 
+// console.log(intro.greet())
+// console.log(intro.greet2())
 
 
+// =============================================
+
+// singleton obj
+//  let obj1= new Object({
+//     name:"asad",age:30
+//  })
+
+// console.log(obj1["name"]);
+
+let tenderUser={
+    email:"ak5963905@gmail.com",
+    fullname:{
+        userfullname:{
+            firstName:"Asad",
+            lastName:"khan"
+        }
+    }
+}
+
+// c.log(` My name is:${tenderUser.fullname.userfullname.firstName}
+// //  ${tendonsoleerUser.fullname.userfullname.lastName}`);
+
+
+//  HOW TO CONCATINATE TWO OBJECTS
+
+let obj2 ={
+    1:"a",
+    2:"b",
+    3:"c"
+    
+}
+const obj3 ={
+
+4:"d",
+5:"e",
+6:"f"
+
+}
+
+let obj4={
+7:"g",
+8:"h",
+9:"j"
+
+}
+
+// let obj4={obj2,obj3}
+// let obj4=Object.assign({}, obj2,obj3)
+let obj5={...obj2,...obj3,...obj4}
+// console.log(obj5); 
+
+
+// ==========================DE STRUCTURIZE THE OBJECTS===================================
+
+const course={
+   courseName:"Java script",
+   coursePrice:"999",
+   courseInstructer:"Asad"
+}
+
+console.log(`my course is ${course.courseName}`);
+// if you want to use something again and again from object so de structurize it
+
+let  { courseName:Name  ,  courseInstructer:inst}=course
+console.log(Name,inst);
 
 
 
