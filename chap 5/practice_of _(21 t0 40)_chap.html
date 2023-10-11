@@ -155,13 +155,173 @@
 // console.log(typeof string);
 
 
+// 30 Controlling the length of decimals
+
+// let price=3.3345+4.5555;
+// let roundprice=price.toFixed(2)
+// console.log(roundprice);
+
+// var curencytotal="$"+ roundprice;
+// console.log(curencytotal);
+
+// let sr=4.4455;
+// console.log(sr.toFixed());
+
+
+
+// 31 Getting the current date and time
+
+// var rightNow = new Date();
+// console.log(rightNow);
+let day=["sun","mon","tue","wed","thu","fri","sat"]
+// var theDay = rightNow.getDay();
+// console.log(day[theDay]);
+
+
+
+// 32 Extracting parts of the date and time
+
+// let right=new Date();
+// console.log(right);
+ 
+
+// let month=right.getMonth();
+let monthnames=["jan","fab","marc","appr","may","jun","jul","aug","sep","oct","novm","dec"]
+// console.log(monthnames[month]);
+
+
+// console.log(right.getFullYear("2004"));
+// console.log(right.getDay());
+// console.log(right.getMinutes());
+// console.log(right.getMilliseconds());
 
 
 
 
 
+// 33 Specifying a date and time
 
 
+// let newdate= new Date();
+// let doomsday=new Date('10 10, 2004')
+
+// var msDoomsday = doomsday.getDay();
+// console.log(newdate);
+// console.log(doomsday);
+// console.log(day[msDoomsday]);
+
+
+// var msDiff = new Date("June 30, 2035").getTime() - new Date().getTime();
+// var daysTillDoom = Math.floor(msDiff / (1000 * 60 * 60 * 24));
+
+
+// console.log(daysTillDoom);
+
+
+// 34 Changing elements of a date and time
+
+// var d=new Date();
+// d.setFullYear(2004)
+// d.setDate(4)
+//  d.setMonth(4)
+//  d.setHours(19)
+//  d.setMinutes(5);
+//  d.setSeconds(33)
+// console.log(d);
+
+
+
+// 35  Functions
+
+// function Telltime (){
+//     let date=new Date();
+//     let thhour=date.getHours()
+//     let thmin=date.getMinutes()
+//     let month=date.getMonth()
+//     let year=date.getFullYear()
+//     alert("THE CUREENT TIME IS ON YOUR SCREEEN : JUST ENTER AND WATCH THE TIME")
+//     alert("Curent Time : "+ thhour+":"+thmin  +  "  Month is : " +month + "  Year is : "+year)
+// }
+
+// Telltime()
+
+
+
+// 36Functions:Passing them data
+
+// function greetuser(greet,name){
+// alert(greet)
+// alert(name)
+
+
+// }
+// greetuser("hellow deer","My name is Asad khan")
+
+
+
+// function showMessage(m, string, num){
+// console.log(m + string + num);
+// }
+
+// var month = "March";
+//  showMessage(month, "'s winner number is ", 23);
+
+
+
+
+// 37Functions:Passing data back from them
+
+
+
+
+// function calcTot(merchTot) {
+//  var orderTot;
+//  if (merchTot >= 100) {
+//  orderTot = merchTot;
+//  }
+//  else if (merchTot < 50.01) {
+//  orderTot = merchTot + 5;
+//  }
+//  else {
+//  orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+//  }
+//  return orderTot;
+//  }
+
+
+//  var totalToCharge = calcTot(79.99);
+// console.log(totalToCharge);
+
+
+// var totalToCharge =calcTot(85.00) 
+// console.log(totalToCharge);
+
+
+
+// 38 Functions:Local vs. global variables
+
+// var theSum;
+// addNumbers()
+
+// function addNumbers() {
+//  theSum = 2 + 2;
+//  console.log(theSum);
+//  return theSum
+// }
+// console.log(theSum);
+
+
+
+// function addNumbers() {
+// var theSum = 2 + 2;
+// console.log(theSum);
+// console.log(theSum);
+// return theSum
+//  }
+
+
+// //  console.log(theSum);
+//  addNumbers()
 
 
 
